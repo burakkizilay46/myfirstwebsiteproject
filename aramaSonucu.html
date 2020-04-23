@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Dolpi Online Münazara</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Verdana, Tahoma, sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  font-style: initial;
+  background-color: #eeee00;
+}
+
+.w3-theme {
+color:#fff !important;background-color:#d1660d !important}
+.w3-sidebar {
+    margin:37px 0 0 0;
+    padding:0 10px 0 0;
+    color:#d1660d;
+}
+
+.w3-main{
+background-color:#eeeed1;
+}
+
+
+</style>
+<body style="background-color: #eeeed1;">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large" >
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="dolpi.html"> <img href="dolpi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white " src="img/logo2.png"  width="80" , height="80"> </a>
+      <a href="munazaraOlustur.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Münazara Oluştur</a>
+      <a href="danismanOlustur.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Özel Danışma Oluştur</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Yardım</a>
+      <a href="profil.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white w3-right">Profil</a>
+       <input  class="textbox" type="text" id="fname" name="fname" style="margin: 10px;">
+       <a href="aramaSonucu.html"><img href="#"  src="img/arama3.png"  width="35" , height="35"> </a>
+       <br><br> 
+      
+      
+    </div>
+  </div>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5  w3-animate-left" id="mySidebar" style="background-color: #eeee00;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div style="background-color: #cd9b1d">
+    <h4 class="w3-bar-item" ><b>Menü</b></h4>
+    <a>========================</a>
+    <a href="menuFelsefe.html" class="w3-bar-item w3-button w3-hover-black" href="#">Felsefe</a>
+  <a href="menuGenelkultur.html" class="w3-bar-item w3-button w3-hover-black" href="#">Genel Kültür</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Matematik</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Fizik</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Oyun</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Teknoloji</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Tasarım</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Sanat</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Girişimcilik</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Yazılım</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Psikoloji</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black" href="#">Sosyoloji</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px" >
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container" style="background-color: #eeeed1;">
+        <h1>Arama Sonucu Bulunamadı!</h1>
+      </div>
+      
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
